@@ -26,6 +26,7 @@ public class ConsoleUI
    private Workout currentWorkout;
    /** The calorie goal the user set, or null if there isn't one yet. */
    private Goal currentGoal;
+
    /**
       Constructs the console UI with an empty workout log and no
       workout in progress.
@@ -233,6 +234,7 @@ public class ConsoleUI
       }
    }
 
+   /** Asks for a name and date, then starts a new workout if none is open. */
    private void handleStartWorkout()
    {
       if (currentWorkout != null)
@@ -254,6 +256,7 @@ public class ConsoleUI
       }
    }
 
+   /** Asks for the exercise type and its details, then adds it to the current workout. */
    private void handleAddExercise()
    {
       if (currentWorkout == null)
@@ -302,6 +305,7 @@ public class ConsoleUI
       }
    }
 
+   /** Saves the current workout to the log and prints its summary. */
    private void handleFinishWorkout()
    {
       if (currentWorkout == null)
@@ -320,11 +324,13 @@ public class ConsoleUI
       currentWorkout = null;
    }
 
+   /** Prints every workout in the log. */
    private void handleViewHistory()
    {
       log.printHistory();
    }
 
+   /** Asks for a goal description and calorie target, then saves the goal. */
    private void handleSetGoal()
    {
       String description = readRequiredLine("Goal description: ");
@@ -340,6 +346,7 @@ public class ConsoleUI
       }
    }
 
+   /** Prints how close the logged workouts are to the current goal. */
    private void handleCheckProgress()
    {
       if (currentGoal == null)

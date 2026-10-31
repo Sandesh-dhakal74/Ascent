@@ -9,10 +9,12 @@ import java.util.List;
  */
 public class Workout
 {
+   /** The session name, like "Push Day". */
    private String workoutName;
+   /** The date of the workout, in YYYY-MM-DD form. */
    private String date;
+   /** The exercises logged in this workout. */
    private List<Exercise> exercises;
-
    /**
       Constructs an empty workout.
       @param workoutName the session name (e.g. "Push Day")
