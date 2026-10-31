@@ -75,7 +75,7 @@ src/ascent/model     Exercise (abstract), StrengthExercise, CardioExercise,
 src/ascent/console   AscentApp (main), ConsoleUI
 ```
 
-The model package has no console input or output logic, so a GUI can reuse it in Phase 2.
+The model package does the calculating and never reads input. Three of its methods (`Workout.printSummary`, `WorkoutLog.printHistory`, `Goal.printProgress`) print to the console, so a GUI would use the getters instead of those.
 
 ## Sample input
 
@@ -126,6 +126,7 @@ You should see these results:
 - Data is kept in memory only. Everything is lost when you quit.
 - Only one goal can be set at a time. Setting a new one replaces the old one.
 - Workouts and exercises cannot be edited or deleted after they are added.
+- Values are only checked to be positive, so unrealistic numbers such as 30 miles in 1 minute are accepted.
 - Dates are stored and shown as text. History is listed in the order workouts were finished, not sorted by date.
 - If the input stream is closed (Ctrl+Z on Windows, Ctrl+D elsewhere) the program stops with an exception instead of exiting cleanly. Use option 7 to quit.
 - There are no automated tests. I tested by running the program by hand.
