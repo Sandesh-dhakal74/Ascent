@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ascent.console"},{"l":"ascent.model"}];updateSearchResults();
