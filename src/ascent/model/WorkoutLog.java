@@ -9,8 +9,8 @@ import java.util.List;
  */
 public class WorkoutLog
 {
+      /** Every finished workout, in the order they were added. */
    private List<Workout> workouts;
-
    /**
       Constructs an empty workout log.
    */

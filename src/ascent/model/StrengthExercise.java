@@ -6,10 +6,12 @@ package ascent.model;
  */
 public class StrengthExercise extends Exercise
 {
+   /** Number of sets performed. */
    private int sets;
+   /** Reps done in each set. */
    private int reps;
+   /** Weight used per rep, in pounds. */
    private double weightLbs;
-
    /**
       Constructs a strength exercise.
       @param name the lift name (e.g. "Bench Press")

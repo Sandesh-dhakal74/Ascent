@@ -6,9 +6,10 @@ package ascent.model;
  */
 public class Goal
 {
+   /** What the goal is for, like "Weekly calorie target". */
    private String description;
+   /** The calorie total the user wants to reach. */
    private double targetCalories;
-
    /**
       Constructs a calorie goal.
       @param description what the goal is for (e.g. "Weekly calorie target")

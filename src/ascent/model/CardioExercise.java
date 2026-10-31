@@ -6,9 +6,10 @@ package ascent.model;
  */
 public class CardioExercise extends Exercise
 {
+   /** Distance covered, in miles. */
    private double distanceMiles;
+   /** Time spent, in minutes. */
    private double durationMinutes;
-
    /**
       Constructs a cardio exercise.
       @param name the activity name (e.g. "Morning Run")

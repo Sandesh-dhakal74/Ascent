@@ -7,9 +7,10 @@ package ascent.model;
  */
 public class FlexibilityExercise extends Exercise
 {
+   /** Time spent, in minutes. */
    private double durationMinutes;
-   private int intensityLevel; // 1 (gentle) to 5 (deep/intense)
-
+   /** How hard it felt, from 1 (gentle) to 5 (intense). */
+   private int intensityLevel;
    /**
       Constructs a flexibility exercise.
       @param name the activity name (e.g. "Yoga Flow")

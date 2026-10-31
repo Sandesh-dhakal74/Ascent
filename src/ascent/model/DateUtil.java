@@ -9,6 +9,7 @@ import java.time.format.DateTimeParseException;
  */
 public final class DateUtil
 {
+   /** Not used. This class only has static methods. */
    private DateUtil()
    {
    }

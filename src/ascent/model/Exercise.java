@@ -8,10 +8,12 @@ package ascent.model;
  */
 public abstract class Exercise
 {
+   /** The exercise name, like "Bench Press". */
    private String name;
-   private String date;      // stored as "YYYY-MM-DD"
+   /** The date performed, stored as YYYY-MM-DD text. */
+   private String date;
+   /** Optional notes, empty if there are none. */
    private String notes;
-
    /**
       Constructs an exercise.
       @param name the exercise name (e.g. "Bench Press", "Morning Run")
