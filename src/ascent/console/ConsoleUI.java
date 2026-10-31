@@ -18,11 +18,14 @@ import ascent.model.DateUtil;
  */
 public class ConsoleUI
 {
+   /** Reads what the user types in the console. */
    private Scanner scanner;
+   /** All the workouts finished so far. */
    private WorkoutLog log;
+   /** The workout being built right now, or null if none is open. */
    private Workout currentWorkout;
+   /** The calorie goal the user set, or null if there isn't one yet. */
    private Goal currentGoal;
-
    /**
       Constructs the console UI with an empty workout log and no
       workout in progress.
@@ -75,6 +78,7 @@ public class ConsoleUI
       }
    }
 
+   /** Prints the list of menu options. */
    private void printMenu()
    {
       System.out.println("1. Start a new workout");

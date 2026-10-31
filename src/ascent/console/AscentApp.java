@@ -7,6 +7,10 @@ package ascent.console;
  */
 public class AscentApp
 {
+   /**
+      Starts the program by creating the console UI and running it.
+      @param args command line arguments, not used
+   */
    public static void main(String[] args)
    {
       ConsoleUI ui = new ConsoleUI();
